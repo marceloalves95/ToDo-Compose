@@ -1,0 +1,151 @@
+[versions]
+
+#Project
+android-gradle = "8.1.1"
+kotlin = "1.8.10"
+gradle = "8.1.1"
+
+#Plugins
+ksp = "1.8.10-1.0.9"
+
+#Material and AndroidX
+material = "1.9.0"
+core-ktx = "1.10.1"
+activity-ktx = "1.7.2"
+appcompat = "1.6.1"
+constraintlayout = "2.1.4"
+swiperefresh-layout = "1.1.0"
+
+#Lifecycle
+lifecycle = "2.6.1"
+
+#Room
+room = "2.5.2"
+
+#Compose
+activity-compose = "1.7.2"
+compose-bom = "2023.08.00"
+constraintlayout-compose = "1.0.1"
+runtime-livedata-compose = "1.5.0"
+navigation-compose = "2.7.1"
+material3 = "1.1.1"
+material-icons-extended = "1.5.0"
+ui-tooling-preview = "1.5.0"
+
+#ThirdParty
+facebook-shimmer = "0.1.0@aar"
+glide = "4.12.0"
+koin = "3.1.4"
+coil = "2.4.0"
+material-dialogs-datetime = "0.8.1-rc"
+
+#Network
+retrofit = "2.9.0"
+okhttp3-logging-interceptor = "5.0.0-alpha.3"
+
+#Others
+desugar-jdk-libs = "2.0.3"
+
+#Tests
+kotlinx-coroutines-test = "1.7.1"
+arch-core-testing = "2.2.0"
+assertK = "0.25"
+mockk = "1.12.3"
+objenesis = "3.2"
+robolectric = "4.9"
+mockwebserver = "4.10.0"
+junit = "4.13.2"
+test-core-ktx = "1.5.0"
+barista = "4.2.0"
+mockk-android = "1.12.1"
+test-ext-junit = "1.1.5"
+test-runner = "1.5.2"
+espresso = "3.5.1"
+agp = "8.1.1"
+org-jetbrains-kotlin-android = "1.8.10"
+truth_test = "1.5.0"
+
+[plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+
+[libraries]
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+gradle-8_1_0 = { module = "com.android.tools.build:gradle", version.ref = "android-gradle" }
+kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+#Material and AndroidX
+material = { module = "com.google.android.material:material", version.ref = "material" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity-ktx" }
+constraint-layout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+swipe-refresh-layout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefresh-layout" }
+
+#Lifecycle
+live-data = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+view-model = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecyle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+#Room
+room = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+
+#Compose
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
+constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayout-compose" }
+runtime-livedata-compose = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "runtime-livedata-compose" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
+navigation-fragment-compose = { module="androidx.navigation:navigation-fragment-ktx", version.ref="navigation-compose"}
+ui = { module = "androidx.compose.ui:ui" }
+ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "ui-tooling-preview" }
+ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "material-icons-extended" }
+
+#ThirdParty
+facebook-shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "facebook-shimmer" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+koin = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coil" }
+material-dialogs-datetime = { module = "io.github.vanpra.compose-material-dialogs:datetime", version.ref = "material-dialogs-datetime" }
+
+#Network
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okhttp3-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp3-logging-interceptor" }
+
+#Others
+desugar-jdk-libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar-jdk-libs" }
+
+#Test
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines-test" }
+arch-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "arch-core-testing" }
+assertK = { module = "com.willowtreeapps.assertk:assertk-jvm", version.ref = "assertK" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+objenesis = { module = "org.objenesis:objenesis", version.ref = "objenesis" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "mockwebserver" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+junit = { module = "junit:junit", version.ref = "junit" }
+ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+test-core-ktx = { module = "androidx.test:core-ktx", version.ref = "test-core-ktx" }
+barista = { module = "com.adevinta.android:barista", version.ref = "barista" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockk-android" }
+test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "test-ext-junit" }
+test-runner = { module = "androidx.test:runner", version.ref = "test-runner" }
+espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+truth-test = { module="androidx.test.ext:truth", version.ref = "truth_test"}
+mockk-agent = { module="io.mockk:mockk-agent-jvm", version.ref="mockk"}
+
+[bundles]
+lifecycle = ["live-data", "view-model", "lifecyle-runtime"]
+compose = ["activity-compose", "compose-bom", "ui", "ui-graphics", "ui-tooling-preview", "constraintlayout-compose", "runtime-livedata-compose", "navigation-compose"]
+room = ["room", "room-runtime"]

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ToDo-Compose</string>
+    <string name="create_task">Create Task</string>
+    <string name="update_task">Update Task</string>
+    <string name="empty_list">No Tasks</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="open">Open</string>
+    <string name="time">Time</string>
+    <string name="task_successfully">Task Created Successfully</string>
+    <string name="dialog_title">Delete Task</string>
+    <string name="dialog_description">Do you to want delete this task?</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_yes">Yes</string>
+    <string-array name="status">
+        <item>To Do</item>
+        <item>Doing</item>
+        <item>Done</item>
+    </string-array>
+</resources>
